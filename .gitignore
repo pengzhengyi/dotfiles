@@ -7,3 +7,8 @@
 !.zshrc
 !.bash_profile
 !.gitconfig
+
+# Include vim filetype plugins
+!.vim/
+!.vim/ftplugin/
+!.vim/ftplugin/*.vim
