@@ -12,3 +12,7 @@
 !.vim/
 !.vim/ftplugin/
 !.vim/ftplugin/*.vim
+
+# Include aria2.conf
+!.aria2/
+!.aria2/aria2.conf
