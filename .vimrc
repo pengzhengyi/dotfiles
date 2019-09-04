@@ -173,7 +173,6 @@ let g:ycm_complete_in_comments = 1
 " Since the keywords are extracted from the Vim syntax file for the filetype, all keywords may not be collected, depending on how the syntax file was written. Usually at least 95% of the keywords are successfully extracted.
 let g:ycm_seed_identifiers_with_syntax = 1
 
-
 " javascript
 let g:javascript_plugin_jsdoc = 1
 " syntax highlighting support For JS libraries
