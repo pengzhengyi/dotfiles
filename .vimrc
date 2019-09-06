@@ -14,6 +14,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ap/vim-css-color'
+Plugin 'azadkuh/vim-cmus'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'godlygeek/tabular'
 Plugin 'hail2u/vim-css3-syntax'
