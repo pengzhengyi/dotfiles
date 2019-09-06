@@ -13,6 +13,9 @@
 !.vim/ftplugin/
 !.vim/ftplugin/*.vim
 
+# vale
+!.vale.int
+
 # Include aria2.conf
 !.aria2/
 !.aria2/aria2.conf

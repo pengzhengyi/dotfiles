@@ -18,6 +18,7 @@ Plugin 'farmergreg/vim-lastplace'
 Plugin 'godlygeek/tabular'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'itchyny/lightline.vim'
+Plugin 'lervag/vimtex'
 Plugin 'maximbaz/lightline-ale'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
@@ -30,6 +31,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'w0rp/ale'
+Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'ycm-core/YouCompleteMe'
 
 
@@ -215,3 +217,8 @@ let g:lightline#ale#indicator_checking = "\uf110 "
 let g:lightline#ale#indicator_warnings = "\uf071 "
 let g:lightline#ale#indicator_errors = "\uf05e "
 let g:lightline#ale#indicator_ok = "\uf00c"
+
+" vim-latex-live-preview
+autocmd Filetype tex setl updatetime=1
+" PDF viewer
+let g:livepreview_previewer = 'open -a Preview'
