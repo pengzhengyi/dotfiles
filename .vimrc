@@ -186,6 +186,9 @@ let g:javascript_plugin_jsdoc = 1
 " syntax highlighting support For JS libraries
 let g:used_javascript_libs = 'angularjs,d3,handlebars,jquery,react,underscore,vue'
 
+" show a method's signature in the popup menu
+let g:tsuquyomi_completion_detail = 1
+
 " vim ale
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
