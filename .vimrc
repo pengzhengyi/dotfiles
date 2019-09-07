@@ -18,12 +18,16 @@ Plugin 'azadkuh/vim-cmus'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'godlygeek/tabular'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'lervag/vimtex'
 Plugin 'maximbaz/lightline-ale'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/yajs.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Quramy/tsuquyomi'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sotte/presenting.vim'
 Plugin 'tpope/vim-fugitive'
@@ -167,6 +171,7 @@ let g:pymode_python = 'python3'
 let g:ycm_semantic_triggers = {
     \   'css': [ 're!^', 're!^\s+', ': ' ],
     \   'scss': [ 're!^', 're!^\s+', ': ' ],
+    \   'typescript': [ '.' ],
     \ }
 
 " When this option is set to 1, YCM will show the completion menu even when typing inside comments.
