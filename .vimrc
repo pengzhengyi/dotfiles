@@ -28,6 +28,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sotte/presenting.vim'
 Plugin 'tpope/vim-fugitive'
@@ -231,3 +232,8 @@ let g:lightline#ale#indicator_ok = "\uf00c"
 autocmd Filetype tex setl updatetime=1
 " PDF viewer
 let g:livepreview_previewer = 'open -a Preview'
+
+" vim-grammarous
+let g:grammarous#default_comments_only_filetypes = {
+            \ '*' : 1, 'help' : 0, 'tex': 0, 'markdown' : 0,
+            \ }
