@@ -30,13 +30,13 @@
     ci = commit
     st = status
     br = branch
-  hist = log --all --graph
-  br = branch
-  l = log --all --decorate --graph --pretty=oneline
-  lv = log --all --decorate --graph --pretty=tformat:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%C(cyan)%s%n%Creset'
+    hist = log --all --graph
+    br = branch
+    l = log --all --decorate --graph --pretty=oneline
+    lv = log --all --decorate --graph --pretty=tformat:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%C(cyan)%s%n%Creset'
     type = cat-file -t
     dump = cat-file -p
     ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [core]
-    autocrlf = false
+    autocrlf = input
     safecrlf = false
