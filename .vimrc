@@ -19,12 +19,12 @@ Plugin 'farmergreg/vim-lastplace'
 Plugin 'godlygeek/tabular'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'itchyny/lightline.vim'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'lervag/vimtex'
 Plugin 'maximbaz/lightline-ale'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
@@ -233,6 +233,10 @@ let g:polyglot_disabled = ['latex']
 
 " PDF viewer
 let g:livepreview_previewer = 'open -a Preview'
+
+" Markdown preview
+let vim_markdown_preview_toggle=2
+let vim_markdown_preview_github=1
 
 " vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
