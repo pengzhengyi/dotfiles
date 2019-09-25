@@ -195,9 +195,6 @@ let g:ale_fixers = {
 \}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
-" Enable completion where available.
-" This setting must be set before ALE is loaded.
-let g:ale_completion_enabled = 1
 
 
 " lightline
