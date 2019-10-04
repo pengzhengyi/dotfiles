@@ -13,6 +13,10 @@
 !.vim/ftplugin/
 !.vim/ftplugin/*.vim
 
+# Include vim spell check
+!.vim/spell/
+!.vim/spell/*
+
 # vale
 !.vale.int
 
