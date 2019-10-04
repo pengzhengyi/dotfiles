@@ -235,6 +235,8 @@ let g:livepreview_previewer = 'open -a Preview'
 " Markdown preview
 let vim_markdown_preview_toggle=2
 let vim_markdown_preview_github=1
+" Remove the rendered preview.
+let vim_markdown_preview_temp_file=1
 
 " vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
