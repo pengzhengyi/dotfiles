@@ -74,6 +74,8 @@ filetype plugin indent on    " required
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 " Set color scheme!¬
+" turn off vim's spell check
+set nospell
 " colorscheme gruvbox
 set clipboard=unnamed
 " Enhance command-line completion
