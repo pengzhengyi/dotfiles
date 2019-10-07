@@ -76,7 +76,8 @@ filetype plugin indent on    " required
 " Set color scheme!¬
 " turn off vim's spell check
 set nospell
-" colorscheme gruvbox
+" compatible color schemes: *elflord *default **peachpuff *ron slate zellner
+colorscheme ron
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
