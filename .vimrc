@@ -39,7 +39,7 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'w0rp/ale'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'ycm-core/YouCompleteMe'
-
+Plugin 'ryanoasis/vim-devicons'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
