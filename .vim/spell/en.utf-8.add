@@ -12,3 +12,5 @@ Turing
 lstm
 pointwise
 platform
+embeddings
+encodings
