@@ -110,3 +110,5 @@ endif " exists("loaded_matchit")
 let &cpo = s:save_cpo
 
 " vim:sts=2:sw=2:
+
+let b:indentLine_noConcealCursor=2
