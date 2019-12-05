@@ -164,6 +164,7 @@ set scrolloff=3
 set spelllang=en_us
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
+autocmd BufNewFile,BufRead *.tex IndentLinesDisable
 
 set foldlevel=99
 
