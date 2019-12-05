@@ -165,6 +165,11 @@ set spelllang=en_us
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufNewFile,BufRead *.tex IndentLinesDisable
+au BufNewFile,BufRead *.tex
+    \ set nocursorline |
+    \ set nornu |
+    \ set number |
+    \ let g:loaded_matchparen=1 |
 
 set foldlevel=99
 
