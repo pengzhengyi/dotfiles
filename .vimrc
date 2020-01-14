@@ -6,6 +6,7 @@ set rtp+=/usr/local/opt/fzf
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -22,12 +23,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'junegunn/fzf.vim'
 Plugin 'kamykn/spelunker.vim'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'lervag/vimtex'
 Plugin 'maximbaz/lightline-ale'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'Quramy/tsuquyomi'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
@@ -195,16 +192,12 @@ let g:ycm_seed_identifiers_with_syntax = 1
 
 " javascript
 let g:javascript_plugin_jsdoc = 1
-" syntax highlighting support For JS libraries
-let g:used_javascript_libs = 'angularjs,d3,handlebars,jquery,react,underscore,vue'
-
-" show a method's signature in the popup menu
-let g:tsuquyomi_completion_detail = 1
 
 " vim ale
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
+
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 
@@ -253,3 +246,6 @@ let vim_markdown_preview_github=1
 let g:grammarous#default_comments_only_filetypes = {
             \ '*' : 1, 'help' : 0, 'tex': 0, 'markdown' : 0,
             \ }
+
+" ~/.vimrc, declare this variable before polyglot is loaded
+let g:polyglot_disabled = ['latex']
