@@ -229,7 +229,6 @@ let g:lightline#ale#indicator_warnings = "\uf071 "
 let g:lightline#ale#indicator_errors = "\uf05e "
 let g:lightline#ale#indicator_ok = "\uf00c"
 
-
 " vimtex
 let g:polyglot_disabled = ['latex']
 
@@ -246,6 +245,3 @@ let vim_markdown_preview_github=1
 let g:grammarous#default_comments_only_filetypes = {
             \ '*' : 1, 'help' : 0, 'tex': 0, 'markdown' : 0,
             \ }
-
-" ~/.vimrc, declare this variable before polyglot is loaded
-let g:polyglot_disabled = ['latex']
