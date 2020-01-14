@@ -25,11 +25,11 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'kamykn/spelunker.vim'
 Plugin 'lervag/vimtex'
 Plugin 'maximbaz/lightline-ale'
+Plugin 'preservim/nerdcommenter'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sotte/presenting.vim'
-Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
@@ -90,8 +90,6 @@ set ttyfast
 set gdefault
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
@@ -245,3 +243,29 @@ let vim_markdown_preview_github=1
 let g:grammarous#default_comments_only_filetypes = {
             \ '*' : 1, 'help' : 0, 'tex': 0, 'markdown' : 0,
             \ }
+
+" NERDCommenter
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
