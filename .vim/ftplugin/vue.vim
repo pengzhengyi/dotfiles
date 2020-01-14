@@ -1,0 +1,1 @@
+autocmd BufEnter *.vue :setlocal filetype=javascript
