@@ -244,8 +244,10 @@ let g:grammarous#default_comments_only_filetypes = {
             \ '*' : 1, 'help' : 0, 'tex': 0, 'markdown' : 0,
             \ }
 
-" NERDCommenter
+" indentLine
+let g:indentLine_fileTypeExclude = ['latex', 'markdown', 'json']
 
+" NERDCommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
