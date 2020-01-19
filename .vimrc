@@ -98,8 +98,10 @@ set encoding=utf-8 nobomb
 set binary
 set noeol
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+set backupdir^=~/.vim/backups//
+set directory^=~/.vim/swaps//
+" Maintain undo history between sessions
+set undofile
 if exists("&undodir")
     set undodir=~/.vim/undo
 endif
