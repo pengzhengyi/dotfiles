@@ -74,6 +74,7 @@ filetype plugin indent on    " required
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 " Set color scheme!¬
 
+set updatetime=100
 set t_Co=256
 set autoread
 " turn off vim's spell check
