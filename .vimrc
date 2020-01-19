@@ -15,7 +15,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ap/vim-css-color'
-Plugin 'azadkuh/vim-cmus'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'godlygeek/tabular'
 Plugin 'hail2u/vim-css3-syntax'
@@ -30,6 +29,7 @@ Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sotte/presenting.vim'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
@@ -73,6 +73,9 @@ filetype plugin indent on    " required
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 " Set color scheme!¬
+
+set t_Co=256
+set autoread
 " turn off vim's spell check
 set nospell
 " compatible color schemes: *elflord *default **peachpuff *ron slate zellner
@@ -196,6 +199,8 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 
+let g:ale_linters_explicit = 1
+
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 
@@ -271,3 +276,14 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+            \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
