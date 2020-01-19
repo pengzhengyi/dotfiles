@@ -1,5 +1,5 @@
-" Use only ESLint by default
+" linters
 let b:ale_linters = ['eslint', 'tsserver']
 
 " Use recommended fixers for Javascript
-let b:ale_fixers = ['eslint', 'importjs', 'prettier', 'prettier_eslint', 'remove_trailing_lines', 'trim_whitespace']
+let b:ale_fixers = ['eslint', 'prettier', 'importjs', 'remove_trailing_lines', 'trim_whitespace']
