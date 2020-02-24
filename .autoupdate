@@ -4,3 +4,4 @@ brew cask upgrade
 vim +PluginUpdate +qall
 pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
 npm update -g
+cd ~/Documents/Dev/Projects/SecLists && git pull
