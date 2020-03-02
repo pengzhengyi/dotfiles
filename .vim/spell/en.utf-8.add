@@ -34,3 +34,6 @@ lifecycle
 class
 section
 section
+hostname
+hostname
+csrf
