@@ -28,14 +28,11 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'sotte/presenting.vim'
-Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'w0rp/ale'
-Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Yggdroot/indentLine'
 Plugin 'ryanoasis/vim-devicons'
@@ -82,6 +79,15 @@ set nospell
 " compatible color schemes: *elflord *default **peachpuff *ron slate zellner
 colorscheme ron
 set clipboard=unnamed
+set complete-=i
+set smarttab
+
+set nrformats-=octal
+
+if !has('nvim') && &ttimeoutlen == -1
+  set ttimeout
+  set ttimeoutlen=100
+endif
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
@@ -238,14 +244,11 @@ let g:lightline#ale#indicator_ok = "\uf00c"
 " vimtex
 let g:polyglot_disabled = ['latex']
 
-" PDF viewer
-let g:livepreview_previewer = 'open -a Preview'
-
 " Markdown preview
 let vim_markdown_preview_toggle=2
 let vim_markdown_preview_github=1
 " Remove the rendered preview.
-" let vim_markdown_preview_temp_file=1
+let vim_markdown_preview_temp_file=1
 
 " vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
