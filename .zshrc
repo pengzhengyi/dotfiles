@@ -215,3 +215,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+###-tns-completion-start-###
+if [ -f /Users/zhengyi/.tnsrc ]; then 
+    source /Users/zhengyi/.tnsrc 
+fi
+###-tns-completion-end-###
