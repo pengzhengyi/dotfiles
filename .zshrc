@@ -106,7 +106,7 @@ POWERLEVEL9K_BATTERY_STAGES=''
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable. 
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -193,14 +193,13 @@ export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 alias wt="curl 'wttr.in?m&format=%l:+%c+%t'"
 alias weather="curl 'wttr.in?m'"
 
-# color ls
-source $(dirname $(gem which colorls))/tab_complete.sh
-alias cls='colorls'
-
 # Python
+alias python3='/usr/local/opt/python@3.8/bin/python3'
 alias py3='python3'
+alias pip3=/usr/local/opt/python@3.8/bin/pip3
 alias py2='python'
 alias py='py3'
+
 
 # Load ZSH autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -217,7 +216,7 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ###-tns-completion-start-###
-if [ -f /Users/zhengyi/.tnsrc ]; then 
-    source /Users/zhengyi/.tnsrc 
+if [ -f /Users/zhengyi/.tnsrc ]; then
+    source /Users/zhengyi/.tnsrc
 fi
 ###-tns-completion-end-###
