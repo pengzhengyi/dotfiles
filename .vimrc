@@ -243,6 +243,7 @@ let g:lightline#ale#indicator_ok = "\uf00c"
 
 " vimtex
 let g:polyglot_disabled = ['latex']
+let g:tex_flavor = 'latex'
 
 " Markdown preview
 let vim_markdown_preview_toggle=2
