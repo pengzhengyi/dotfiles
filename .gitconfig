@@ -22,7 +22,7 @@
     required = true
 [user]
     name = pengzhengyi
-    email = pengzhengyipengzhengyi@gmail.edu
+    email = pengzhengyipengzhengyi@gmail.com
 [pull]
     rebase = false
 [alias]
